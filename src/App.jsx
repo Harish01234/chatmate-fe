@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import io from 'socket.io-client';
 
-// Use your backend URL or localhost during development
-const socket = io('http://localhost:3000', {
+// Update with your backend URL
+const socket = io('https://chatmate-backend.vercel.app/', {
   withCredentials: true
 });
 
@@ -25,7 +25,6 @@ function App() {
   const joinRoom = () => {
     if (room) {
       socket.emit('joinRoom', room);
-      // You can add a custom alert or console log to notify the user if needed
       console.log(`Joined room: ${room}`);
     }
   };
