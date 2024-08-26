@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import io from 'socket.io-client';
 
 // Update with your backend URL
-const socket = io('https://chatmate-backend.vercel.app/', {
+const socket = io('http://localhost:3000', {
   withCredentials: true
 });
 
