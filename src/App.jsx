@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 import io from 'socket.io-client';
 
 // Update with your backend URL
-const socket = io('https://chatmate-ws-server.onrender.com/', {
-  withCredentials: true
+const socket = io('https://chatmate-backend-f6b6.onrender.com/', {
+  withCredentials: false
 });
 
 function App() {
